@@ -1,1 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ganhar Dinheiro em 5 Dias</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+    <h1>💰 Ganhar Dinheiro em 5 Dias</h1>
+    <p>Estratégias realistas para gerar renda e administrar melhor seu dinheiro.</p>
+</header>
+
+<section class="container">
+
+    <div class="card">
+        <h2>Calculadora de Ganhos</h2>
+
+        <input type="number" id="ganhoDia" placeholder="Quanto ganha por dia?">
+
+        <button onclick="calcularGanhos()">
+            Calcular
+        </button>
+
+        <h3 id="resultado"></h3>
+    </div>
+
+    <div class="card">
+        <h2>Controle Financeiro</h2>
+
+        <input type="number" id="salario" placeholder="Dinheiro disponível">
+
+        <button onclick="analisarDinheiro()">
+            Analisar
+        </button>
+
+        <div id="analise"></div>
+    </div>
+
+    <div class="card">
+        <h2>Filtrar Gastos</h2>
+
+        <select id="filtro" onchange="filtrarTabela()">
+            <option value="todos">Todos</option>
+            <option value="bom">Recomendados</option>
+            <option value="ruim">Evitar</option>
+        </select>
+
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Categoria</th>
+                    <th>Exemplo</th>
+                    <th>Impacto</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr class="bom">
+                    <td>✅</td>
+                    <td>Investimento</td>
+                    <td>Curso Profissional</td>
+                    <td>Alto Retorno</td>
+                </tr>
+
+                <tr class="bom">
+                    <td>✅</td>
+                    <td>Reserva</td>
+                    <td>Emergência</td>
+                    <td>Proteção Financeira</td>
+                </tr>
+
+                <tr class="bom">
+                    <td>✅</td>
+                    <td>Trabalho</td>
+                    <td>Ferramentas</td>
+                    <td>Aumenta Renda</td>
+                </tr>
+
+                <tr class="ruim">
+                    <td>❌</td>
+                    <td>Impulso</td>
+                    <td>Compras sem necessidade</td>
+                    <td>Perda de Dinheiro</td>
+                </tr>
+
+                <tr class="ruim">
+                    <td>❌</td>
+                    <td>Apostas</td>
+                    <td>Jogos de azar</td>
+                    <td>Alto Risco</td>
+                </tr>
+
+                <tr class="ruim">
+                    <td>❌</td>
+                    <td>Luxo</td>
+                    <td>Parcelamentos desnecessários</td>
+                    <td>Endividamento</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Dica Financeira</h2>
+
+        <p id="dica"></p>
+
+        <button onclick="novaDica()">
+            Nova Dica
+        </button>
+    </div>
+
+    <div class="card">
+        <h2>Distribuição Recomendada</h2>
+
+        <div class="grafico">
+            <div class="necessidades">50%</div>
+            <div class="investimentos">30%</div>
+            <div class="lazer">20%</div>
+        </div>
+
+        <ul>
+            <li>50% Necessidades</li>
+            <li>30% Investimentos e Objetivos</li>
+            <li>20% Lazer</li>
+        </ul>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
